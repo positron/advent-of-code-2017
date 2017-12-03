@@ -15,7 +15,7 @@
   (->> number-pairs
        (filter #(apply = %))
        (map first)
-       (apply +)))
+       (reduce +)))
 
 (defn solve-captcha-1
   [captcha]

@@ -36,7 +36,7 @@
   [spreadsheet row-fn]
   (->> spreadsheet
        (map row-fn)
-       (apply +)))
+       (reduce +)))
 
 ; Puzzle 1
 ; (-> (read-spreadsheet) (sum-results calculate-diff))
